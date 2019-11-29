@@ -1,0 +1,23 @@
+/* purgecss start ignore */
+
+body {
+  background-color: #f7fafc;
+}
+
+h1 {
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: calc(1.15 * 1.125rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: calc(1.25 * 1.125rem);
+  }
+}
+
+/* purgecss end ignore */

@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.html,
+body {
+  background-color: #1d2440;
+}
+.header {
+  height: 211px;
+  background-color: #1d2440;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 45px;
+}
+.nav-button {
+  text-align: center;
+  line-height: 31px;
+  width: 90px;
+  height: 31px;
+  background: #b0935c;
+  border-radius: 2px;
+}
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  margin: 0px;
+  border-bottom: 5px solid white;
+}
+.arrow-down {
+  width: 0;
+  padding-bottom: 4px;
+  margin: 0px;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+}
+.hero-page {
+  height: 698px;
+  background: url("../../src/images/8832-Routeburn-Track-Fiordland-Miles-Holden(1)Background.png")
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+.hero-text {
+  display: flex;
+  text-align: center;
+  margin: 20vw 40vh 20vw 40vh;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  opacity: 1;
+}
+.dropdown {
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.dropdown-item {
+  padding: 6px;
+  color: black;
+}
+.dropdown-item:hover {
+  background-color: #b0935c;
+  color: white;
+}
+.visible {
+  width: 201px;
+  height: 272px;
+}
+.small-menu {
+  display: none;
+}
+.footer {
+  height: 0;
+}
+.footer-text {
+  display: none;
+  text-align: center;
+  margin-left: 5vw;
+  margin-top: 20vw;
+  margin-right: 5vw;
+  margin-bottom: 20vw;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  opacity: 1;
+  color: #b0935c;
+}
+@media (max-width: 900px) {
+  .visible {
+    width: 75vw;
+  }
+  .hero-text {
+    display: none;
+  }
+  .mx-6 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sub-nav {
+    width: 0;
+    overflow: hidden;
+  }
+  .toggle-button {
+    margin: 0;
+  }
+  .small-menu {
+    display: inline-block;
+  }
+  .text-base {
+    font-size: 0.75rem;
+  }
+  .footer-text {
+    display: flex;
+  }
+  .footer {
+    height: 30vh;
+  }
+}

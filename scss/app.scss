@@ -1,0 +1,13 @@
+/* purgecss start ignore */
+
+h1 {
+	// tailwind examples
+	@apply text-lg;
+	@screen md {
+		font-size: calc(1.15 * theme('fontSize.lg'));
+	}
+	@screen lg {
+		font-size: calc(1.25 * theme('fontSize.lg'));
+	}
+}
+/* purgecss end ignore */
